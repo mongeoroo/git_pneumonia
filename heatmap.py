@@ -8,7 +8,7 @@ from train_model import model_1
 from Utils import min_max_normalization, label
 from keras.preprocessing.image import ImageDataGenerator
 from scipy.ndimage import gaussian_filter
-from train_model3 import model_3
+from train_model3 import model_2
 import os
 import tensorflow as tf
 
@@ -78,49 +78,53 @@ def saliencymap(model,X_data):
 
     return saliency, output
 
+def show_heatmap(image_path):
+    image = load_img(image_path, target_size=(224, 224))
+    image_array = img_to_array(image)
+    image_array = np.expand_dims(image_array, axis=0)
+    test_datagen = ImageDataGenerator(rescale=1.0/255, samplewise_center=True,samplewise_std_normalization=True)
+    gen = test_datagen.flow(image_array,batch_size=1)
+    X_data = gen.next()
+
+    plt.subplot(1, 4, 1)
+    plt.imshow(min_max_normalization(X_data[0]),cmap='gray')
+    plt.title('Original image')
+    plt.axis('off')
+
+    model = model_1
+    model.load_weights('./weights_model1.h5')
+
+    '''cam'''
+    fc, cam, output = custom_cam(model,X_data)
+    plt.subplot(1, 4, 2)
+    plt.imshow(min_max_normalization(cam), cmap='jet')
+    plt.imshow(min_max_normalization(X_data[0]),cmap='gray',alpha=.6)
+    plt.title('CAM: {}'.format(label[int(round(output))]))
+    plt.axis('off')
+
+    model = model_2
+    model.load_weights('./weights_model2.h5')
+
+    '''grad cam'''
+    grad_cam, grad_value, output = custom_grad_cam(model,X_data)
+    plt.subplot(1, 4, 3)
+    plt.imshow(min_max_normalization(grad_cam), cmap='jet')
+    plt.imshow(min_max_normalization(X_data[0]),cmap='gray',alpha=.6)
+    plt.title('Grad-CAM: {}'.format(label[int(round(output))]))
+    plt.axis('off')
+
+
+    '''saliency map'''
+    saliency, output = saliencymap(model,X_data)
+    plt.subplot(1, 4, 4)
+    plt.imshow(min_max_normalization(gaussian_filter(saliency,sigma=1)), cmap='jet')
+    plt.imshow(min_max_normalization(X_data[0]),cmap='gray',alpha=.5)
+    plt.title('Saliency Map: {}'.format(label[int(round(output))]))
+    plt.axis('off')
+    plt.show()
+
 if __name__=='__main__':
     with tf.device('/cpu:0'):
-        image = load_img("C:\mong\Korea radiology\git_pneumonia\chest_xray\\test\PNEUMONIA\\person52_virus_106.jpeg", target_size=(224, 224))
-
-        image_array = img_to_array(image)
-        image_array = np.expand_dims(image_array, axis=0)
-        test_datagen = ImageDataGenerator(rescale=1.0/255, samplewise_center=True,samplewise_std_normalization=True)
-        gen = test_datagen.flow(image_array,batch_size=1)
-        X_data = gen.next()
-
-        plt.subplot(1, 4, 1)
-        plt.imshow(min_max_normalization(X_data[0]),cmap='gray')
-        plt.title('Original image')
-        plt.axis('off')
-
-        model = model_1
-        model.load_weights('./weights_model1.h5')
-
-        '''cam'''
-        fc, cam, output = custom_cam(model,X_data)
-        plt.subplot(1, 4, 2)
-        plt.imshow(min_max_normalization(cam), cmap='jet')
-        plt.imshow(min_max_normalization(X_data[0]),cmap='gray',alpha=.6)
-        plt.title('CAM: {}'.format(label[int(round(output))]))
-        plt.axis('off')
-
-        model = model_3
-        model.load_weights('./weights_model2.h5')
-
-        '''grad cam'''
-        grad_cam, grad_value, output = custom_grad_cam(model,X_data)
-        plt.subplot(1, 4, 3)
-        plt.imshow(min_max_normalization(grad_cam), cmap='jet')
-        plt.imshow(min_max_normalization(X_data[0]),cmap='gray',alpha=.6)
-        plt.title('Grad-CAM: {}'.format(label[int(round(output))]))
-        plt.axis('off')
-
-
-        '''saliency map'''
-        saliency, output = saliencymap(model,X_data)
-        plt.subplot(1, 4, 4)
-        plt.imshow(min_max_normalization(gaussian_filter(saliency,sigma=1)), cmap='jet')
-        plt.imshow(min_max_normalization(X_data[0]),cmap='gray',alpha=.5)
-        plt.title('Saliency Map: {}'.format(label[int(round(output))]))
-        plt.axis('off')
-        plt.show()
+        image_path = ".\chest_xray\\test\PNEUMONIA\\person52_virus_106.jpeg"
+        show_heatmap(image_path)
+        
