@@ -26,9 +26,9 @@ x = Dense(512, activation='relu', kernel_initializer='he_normal', name='fc1')(x)
 x = Dense(1, activation='sigmoid', kernel_initializer='he_normal', name='fc3')(x)
 
 
-model_3 = Model(inputs=den.input,outputs = x)
+model_2 = Model(inputs=den.input,outputs = x)
 
 
 if __name__== '__main__':
 
-    model_3.summary(line_length=120)
+    model_2.summary(line_length=120)
