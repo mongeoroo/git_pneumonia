@@ -11,7 +11,7 @@ conda install -y matplotlib
 conda install -y tensorflow-gpu==1.14.0
 
 Chest Xray Dataset link
-https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia?
+https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
 
 train_model.py: train model for CAM
 
