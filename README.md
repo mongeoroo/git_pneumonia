@@ -2,7 +2,7 @@
  pneumonia classification
 
 ---setting---
-conda install -y opencv
+conda install -y opencv\n
 conda install -y cmake
 conda install -y -c conda-forge dlib
 conda install -y pillow
