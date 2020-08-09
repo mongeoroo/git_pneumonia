@@ -9,7 +9,7 @@ import keras.backend as K
 import keras
 from SEmodel import senet
 from custom_vgg16 import custom_vgg16
-from train_model3 import model_3
+from train_model3 import model_2
 from tensorflow import keras
 import os
 import tensorflow as tf
@@ -22,7 +22,7 @@ train_path = 'C:\mong\Korea radiology\pneumonia/chest_xray/train'
 test_path = 'C:\mong\Korea radiology\pneumonia/chest_xray/test'
 
 model = model_1
-# model.load_weights('./weights_model3_121/01weights_model2.h5')
+#model = model_2
 otim = Adam(lr=0.0001, beta_1=0.9,beta_2=0.999,epsilon=1e-07)
 model.compile(optimizer = otim, loss = 'binary_crossentropy', metrics = ['accuracy'])
 model.summary(line_length=120)
