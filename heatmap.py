@@ -8,14 +8,13 @@ from train_model import model_1
 from Utils import min_max_normalization, label
 from keras.preprocessing.image import ImageDataGenerator
 from scipy.ndimage import gaussian_filter
-from train_model3 import model_2
-import os
+from train_model2 import model_2
 import tensorflow as tf
 
 def custom_cam(model,X_data):
     class_output = model.output[0, 0]
 
-    conv = model.get_layer('add_1').output
+    conv = model.layers[-3].output
     iterate = K.function([model.input], [conv,class_output])
 
     conv_output, output = iterate([X_data])
@@ -38,7 +37,7 @@ def custom_grad_cam(model,X_data):
 
     class_output = model.output[0,0]
 
-    conv = model.get_layer('add_1').output
+    conv = model.layers[-4].output
 
     grads = K.gradients(class_output, conv)[0]
 
@@ -125,6 +124,5 @@ def show_heatmap(image_path):
 
 if __name__=='__main__':
     with tf.device('/cpu:0'):
-        image_path = ".\chest_xray\\test\PNEUMONIA\\person52_virus_106.jpeg"
+        image_path = ".\childhood-pneumonia-1.jpg"
         show_heatmap(image_path)
-        

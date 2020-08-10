@@ -6,4 +6,3 @@ def min_max_normalization(data):
     return rtn
 
 label = ['NORMAL', 'PNEUMONIA']
-

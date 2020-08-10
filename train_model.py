@@ -28,4 +28,3 @@ model_1 = Model(inputs=den.input,outputs = x)
 
 if __name__== '__main__':
     model_1.summary()
-
