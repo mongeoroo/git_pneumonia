@@ -1,22 +1,15 @@
-from Utils import  min_max_normalization, single_class_accuracy
 from keras.preprocessing.image import ImageDataGenerator
-from keras.optimizers import RMSprop,Adam
-import matplotlib.pyplot as plt
-import os
+from keras.optimizers import Adam
 import numpy as np
 from train_model import model_1
-import keras.backend as K
-import keras
-from SEmodel import senet
-from custom_vgg16 import custom_vgg16
-from train_model3 import model_2
+from train_model2 import model_2
 from tensorflow import keras
 import os
-import tensorflow as tf
+
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 np.random.seed(55)
-# tf.debugging.set_log_device_placement(True)
+
 
 train_path = 'C:\mong\Korea radiology\pneumonia/chest_xray/train'
 test_path = 'C:\mong\Korea radiology\pneumonia/chest_xray/test'
