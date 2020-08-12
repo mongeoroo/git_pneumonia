@@ -1,7 +1,7 @@
 # git_pneumonia
- pneumonia binary classification
+##pneumonia binary classification
 
-setting
+##setting
 -------
 list   
 >conda install -y opencv   
