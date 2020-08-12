@@ -14,8 +14,8 @@ list
 
 Chest Xray Dataset link
 -----------------------
-<https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia>   
-<https://radiopaedia.org/cases/childhood-pneumonia-1?lang=us>
+><https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia>   
+><https://radiopaedia.org/cases/childhood-pneumonia-1?lang=us>
 
 
 code usage
