@@ -28,7 +28,7 @@ code usage
 * #### train_model2.py: 
          deep learning model for Grad-CAM, Saliency Map 
          its accuracy to test dataset is 91.34%
-<img src="https://github.com/mongeoroo/git_pneumonia/blob/master/image/model2_architecture.png" width="900px" height="100px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
+<img src="https://github.com/mongeoroo/git_pneumonia/blob/master/image/model2_architecture.png" width="750px" height="100px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
 
 * #### train.py: 
          you can train your model for training dataset by this code   
