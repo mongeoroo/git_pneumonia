@@ -31,5 +31,7 @@ code usage
 * #### train.py: 
          you can train your model for training dataset by this code   
          
-* #### heatmap: show heatmap for model1 and 2   
+* #### heatmap: 
+         show heatmap for model1 and 2   
+         <img src="/heatmap.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Heatmap"></img><br/>
 
