@@ -33,7 +33,7 @@ code usage
          
 * #### heatmap: 
          show heatmap for model1 and 2   
-         the heatmap is made like below.
+         the heatmap applied to "childhood-pneumonia-1.jpg" is like below.
 ![heatmap](https://github.com/mongeoroo/git_pneumonia/blob/master/heatmap.png)
 
 
