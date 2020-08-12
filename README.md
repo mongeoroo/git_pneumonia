@@ -33,5 +33,6 @@ code usage
          
 * #### heatmap: 
          show heatmap for model1 and 2   
+         ![Alt text](/path/heatmap.png)
          <img src="/path/heatmap.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Heatmap"></img><br/>
 
