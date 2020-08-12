@@ -3,7 +3,7 @@
 
 setting
 -------
-list
+list   
 1.conda install -y opencv
 2.conda install -y cmake
 3.conda install -y -c conda-forge dlib
@@ -14,7 +14,7 @@ list
 
 Chest Xray Dataset link
 -----------------------
-<https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia>
+<https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia> 
 <https://radiopaedia.org/cases/childhood-pneumonia-1?lang=us>
 
 
