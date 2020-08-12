@@ -3,13 +3,14 @@
 
 setting
 -------
-*conda install -y opencv
-*conda install -y cmake
-*conda install -y -c conda-forge dlib
-*conda install -y pillow
-*conda install -y keras==2.1.6
-*conda install -y matplotlib
-*conda install -y tensorflow-gpu==1.14.0
+list
+1.conda install -y opencv
+2.conda install -y cmake
+3.conda install -y -c conda-forge dlib
+4.conda install -y pillow
+5.conda install -y keras==2.1.6
+6.conda install -y matplotlib
+7.conda install -y tensorflow-gpu==1.14.0
 
 Chest Xray Dataset link
 -----------------------
