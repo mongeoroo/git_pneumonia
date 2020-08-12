@@ -24,12 +24,10 @@ code usage
          deep learning model for CAM.   
          img
          its accuracy to test dataset is 91.02%
-         
 >* #### train_model2.py: 
          deep learning model for Grad-CAM, Saliency Map 
          img
          its accuracy to test dataset is 91.34%
-         
 >* #### train.py: training code   
 >* #### heatmap: show heatmap for model1 and 2   
 
