@@ -16,6 +16,9 @@ Chest Xray Dataset link
 <https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia>
 <https://radiopaedia.org/cases/childhood-pneumonia-1?lang=us>
 
+
+code usage
+----------
 >train_model.py: train model for CAM
 
 >train_model2.py: train model for Grad-CAM, Saliency Map
