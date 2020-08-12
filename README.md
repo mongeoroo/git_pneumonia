@@ -25,6 +25,7 @@ code usage
          this model consist of DenseNetwork169 and SENet         
          its accuracy to test dataset is 91.02%
 ![model1](https://github.com/mongeoroo/git_pneumonia/blob/master/image/model1_architecture.png)
+<img src="https://github.com/mongeoroo/git_pneumonia/blob/master/image/model1_architecture.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="RubberDuck"></img><br/>
 * #### train_model2.py: 
          deep learning model for Grad-CAM, Saliency Map 
          img
