@@ -1,8 +1,8 @@
 from keras.preprocessing.image import ImageDataGenerator
 from keras.optimizers import Adam
 import numpy as np
-from train_model import model_1
-from train_model2 import model_2
+from model import model_1
+from model2 import model_2
 from tensorflow import keras
 import os
 
