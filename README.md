@@ -22,7 +22,7 @@ code usage
 ----------
 * #### train_model.py:   
          deep learning model for CAM.   
-         img
+         this model consist of DenseNetwork169 and 
          its accuracy to test dataset is 91.02%
 * #### train_model2.py: 
          deep learning model for Grad-CAM, Saliency Map 
@@ -35,5 +35,6 @@ code usage
          show heatmap for model1 and 2   
          the heatmap is made like below.
 ![heatmap](https://user-images.githubusercontent.com/30902020/89966780-de378700-dc8a-11ea-8c33-6c54d4b96891.png)
+![heatmap]("./heatmap.png")
 
 
