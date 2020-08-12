@@ -35,6 +35,6 @@ code usage
          show heatmap for model1 and 2   
          the heatmap is made like below.
 ![heatmap](https://user-images.githubusercontent.com/30902020/89966780-de378700-dc8a-11ea-8c33-6c54d4b96891.png)
-![heatmap]("./heatmap.png")
+![heatmap]("path/heatmap.png")
 
 
