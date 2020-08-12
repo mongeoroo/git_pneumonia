@@ -22,8 +22,9 @@ code usage
 ----------
 * #### train_model.py:   
          deep learning model for CAM.   
-         this model consist of DenseNetwork169 and 
+         this model consist of DenseNetwork169 and SENet         
          its accuracy to test dataset is 91.02%
+![model1](https://github.com/mongeoroo/git_pneumonia/blob/master/image/model1_architecture.png)
 * #### train_model2.py: 
          deep learning model for Grad-CAM, Saliency Map 
          img
@@ -35,6 +36,6 @@ code usage
          show heatmap for model1 and 2   
          the heatmap applied to "childhood-pneumonia-1.jpg" is like below.
          and you can apply your data to this model by changing the path which is in the main block.
-![heatmap](https://github.com/mongeoroo/git_pneumonia/blob/master/heatmap.png)
+![heatmap](https://github.com/mongeoroo/git_pneumonia/blob/master/image/heatmap.png)
 
 
