@@ -21,8 +21,15 @@ Chest Xray Dataset link
 code usage
 ----------
 >* #### train_model.py:   
-         train model for CAM   
->* #### train_model2.py: train model for Grad-CAM, Saliency Map   
+         deep learning model for CAM.   
+         img
+         its accuracy to test dataset is 91.02%
+         
+>* #### train_model2.py: 
+         deep learning model for Grad-CAM, Saliency Map 
+         img
+         its accuracy to test dataset is 91.34%
+         
 >* #### train.py: training code   
 >* #### heatmap: show heatmap for model1 and 2   
 
