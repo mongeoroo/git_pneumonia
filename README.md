@@ -1,5 +1,5 @@
 # git_pneumonia
- pneumonia classification
+ pneumonia binary classification
 
 setting
 -------
@@ -28,6 +28,8 @@ code usage
          deep learning model for Grad-CAM, Saliency Map 
          img
          its accuracy to test dataset is 91.34%
-* #### train.py: training code   
+* #### train.py: 
+         you can train your model for training dataset by this code   
+         
 * #### heatmap: show heatmap for model1 and 2   
 
