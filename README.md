@@ -20,10 +20,10 @@ Chest Xray Dataset link
 
 code usage
 ----------
->train_model.py: train model for CAM
+>train_model.py: train model for CAM   
 
->train_model2.py: train model for Grad-CAM, Saliency Map
+>train_model2.py: train model for Grad-CAM, Saliency Map   
 
->train.py: training code
+>train.py: training code   
 
->heatmap: show heatmap for model1 and 2
+>heatmap: show heatmap for model1 and 2   
