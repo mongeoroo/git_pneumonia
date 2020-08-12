@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 import cv2
-from train_model import model_1
 from Utils import min_max_normalization, label
 from keras.preprocessing.image import ImageDataGenerator
 from scipy.ndimage import gaussian_filter
-from train_model2 import model_2
+from model import model_1
+from model2 import model_2
 import tensorflow as tf
 
 def custom_cam(model,X_data):
