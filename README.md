@@ -33,5 +33,5 @@ code usage
          
 * #### heatmap: 
          show heatmap for model1 and 2   
-         <img src="/heatmap.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Heatmap"></img><br/>
+         <img src="/path/heatmap.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Heatmap"></img><br/>
 
