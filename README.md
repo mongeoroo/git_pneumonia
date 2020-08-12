@@ -33,6 +33,7 @@ code usage
          
 * #### heatmap: 
          show heatmap for model1 and 2   
+         the heatmap is made like below.
 ![heatmap](https://user-images.githubusercontent.com/30902020/89966513-4b96e800-dc8a-11ea-8c52-e12b8d87c6df.png)
-<img src="/path/heatmap.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Heatmap"></img><br/>
+
 
