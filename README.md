@@ -34,6 +34,7 @@ code usage
 * #### heatmap: 
          show heatmap for model1 and 2   
          the heatmap applied to "childhood-pneumonia-1.jpg" is like below.
+         and you can apply your data to this model by changing the path which is in the main block.
 ![heatmap](https://github.com/mongeoroo/git_pneumonia/blob/master/heatmap.png)
 
 
