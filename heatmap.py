@@ -72,8 +72,7 @@ def saliencymap(model,X_data):
 
     saliency, output = iterate([X_data])
 
-    saliency = np.max(saliency[0],axis=-1)
-    saliency = (saliency>0)*saliency
+    saliency = np.max(np.abs(saliency[0]),axis=-1)
 
     return saliency, output
 
